@@ -11,7 +11,7 @@ async function bootstrap() {
       secret: process.env.SESSION_SECRET, 
       resave: false,
       saveUninitialized: false,
-      cookie: {maxAge:30000}
+      cookie: {maxAge:1000000}
     }),
   );
   app.use(passport.initialize());
